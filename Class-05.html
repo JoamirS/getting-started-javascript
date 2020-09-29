@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM.</title>
+    <style>
+        body {
+            background-color: rgb(103, 166, 176);
+            font: normal 20pt Klavika;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h> Iniciando com <strong> DOM </strong> do JavaScript.</h>
+    <p> Aqui vai o resultado.</p>
+    <p> O DOM (Document Object Model) representa o mesmo documento para que possa ser manipulado. <br>
+        O DOM é uma representação orientada a objetos da página da web,<br> que pode ser modificada com uma 
+        linguagem de script como JavaScript.
+    </p>
+    <div id='clickbotton'> Clique em mim.</div>
+    <script>
+        var paragraphOne = window.document.getElementsByTagName('p')[0]
+        paragraphOne.style.color = 'blue';
+        window.document.write('A frase do primeiro parágrafo é : ' + paragraphOne.innerText)
+
+        var bodyPage = window.document.body
+        bodyPage.style.background = 'black'
+        
+    </script>
+</body>
+</html>
