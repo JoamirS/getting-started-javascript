@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Interações </title>
+    <title> Eventos DOM </title>
     <style>
         div#area {
             font: normal 15pt Klavika;
@@ -20,5 +20,25 @@
     <div id="area">
         Interaja...
     </div>
+    <script>
+        var newArea = window.document.getElementById('area')
+
+        newArea.addEventListener('click', clicar)
+        newArea.addEventListener('mouseenter', entrar)
+        newArea.addEventListener('mouseout', sair)
+
+        function clicar() {
+            newArea.innerText = 'Clicou'
+            newArea.style.background = 'blue'
+        }
+
+        function entrar(){
+            newArea.innerText = 'Mouse sobre o elemento'
+        }
+
+        function sair() {
+            newArea.innerText = 'Mouse fora do elemento'
+        }
+    </script>
 </body>
 </html>
