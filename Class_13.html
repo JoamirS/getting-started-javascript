@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modelo de Exercicio</title>
+    <link rel="stylesheet" href="Class_11.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de idade </h1>
+    </header>
+    <section>
+        <div>
+            <p> Ano de Nascimento:
+                <input type="number" name="textYear" id="textYear" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radiosex" id="Male" checked>
+                <label for="Male"> Masculino</label>
+                <input type="radio" name="radiosex" id="Feminine">
+                <label for="Feminine"> Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="Verify()">
+            </p>
+        </div>
+        <div id="result">
+            Preencha os dados acima para ver o resultado.
+        </div>
+    </section>
+    <footer>
+        <p> &copy; Curso em video </p>
+    </footer>
+    <script src="Class_13.js"> </script>
+</body>
+
+</html>
